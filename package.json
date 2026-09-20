@@ -1,0 +1,17 @@
+{
+  "name": "config-merge-rehearsal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "配置发布系统并发修改预演：基于 RFC 6902 双补丁的确定性三方合并 REST API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "fastify": "^5.2.0"
+  }
+}

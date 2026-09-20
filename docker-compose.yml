@@ -1,0 +1,13 @@
+services:
+  api:
+    build: .
+    image: config-merge-rehearsal:latest
+    container_name: config-merge-rehearsal
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      HOST: 0.0.0.0
+      LOG_LEVEL: info
+      BODY_LIMIT: 1048576
+    restart: unless-stopped
